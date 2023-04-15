@@ -1,0 +1,29 @@
+<Cluster>
+<Name>Kezelõpult</Name>
+<NumElts>6</NumElts>
+<DBL>
+<Name>Filt_alsó</Name>
+<Val>750.00000000000000</Val>
+</DBL>
+<DBL>
+<Name>Filt_felsõ</Name>
+<Val>7399.99999999999999</Val>
+</DBL>
+<DBL>
+<Name>Optikai elem hossza (km)</Name>
+<Val>4.45000000000000E-4</Val>
+</DBL>
+<DBL>
+<Name>Referencia hullámhossz (nm)</Name>
+<Val>800.00000000000000</Val>
+</DBL>
+<I32>
+<Name> Illesztendõ polinom fokszáma</Name>
+<Val>7</Val>
+</I32>
+<String>
+<Name>Megjegyzések</Name>
+<Val>**********</Val>
+</String>
+</Cluster>
+

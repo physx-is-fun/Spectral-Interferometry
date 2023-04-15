@@ -1,0 +1,3 @@
+Az elso futtatas elott allitsuk be, hogy a program mindig rendszergazdai jogosultsaggal fusson, kulonben hibat jelez ki.
+Jobb egergomb az exe fajlra --> Tulajdonsagok --> Kompatibilitas --> Futtatas rendszergazdakent (pipa) 
+Az alapertelmezeskent automatikusan beolvasott config.txt ; fazisderivaltak.txt ; valamint az ifg3700.txt fajlokat semmikepp nem szabad athelyezni, kulonben a program hibat jelez ki.

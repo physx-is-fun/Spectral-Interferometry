@@ -1,5 +1,5 @@
 ﻿<?xml version='1.0' encoding='UTF-8'?>
-<Project Type="Project" LVVersion="16008000">
+<Project Type="Project" LVVersion="23008000">
 	<Item Name="My Computer" Type="My Computer">
 		<Property Name="NI.SortType" Type="Int">3</Property>
 		<Property Name="server.app.propertiesEnabled" Type="Bool">true</Property>
@@ -15,14 +15,14 @@
 			<Item Name="1.vi" Type="VI" URL="../1.vi"/>
 			<Item Name="2.vi" Type="VI" URL="../2.vi"/>
 			<Item Name="3.vi" Type="VI" URL="../3.vi"/>
-			<Item Name="alapértelmezett előlap.vi" Type="VI" URL="../alapértelmezett előlap.vi"/>
 			<Item Name="hibakezelés.vi" Type="VI" URL="../hibakezelés.vi"/>
 			<Item Name="párbeszédablakok.vi" Type="VI" URL="../párbeszédablakok.vi"/>
+			<Item Name="default front panel.vi" Type="VI" URL="../default front panel.vi"/>
 		</Item>
 		<Item Name="ctrl-ok" Type="Folder">
 			<Item Name="adat.ctl" Type="VI" URL="../adat.ctl"/>
-			<Item Name="kezelőpult.ctl" Type="VI" URL="../kezelőpult.ctl"/>
 			<Item Name="állapotok.ctl" Type="VI" URL="../állapotok.ctl"/>
+			<Item Name="control panel.ctl" Type="VI" URL="../control panel.ctl"/>
 		</Item>
 		<Item Name="main.vi" Type="VI" URL="../main.vi"/>
 		<Item Name="config.txt" Type="Document" URL="../config.txt"/>
@@ -58,7 +58,6 @@
 				<Item Name="GetRTHostConnectedProp.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/GetRTHostConnectedProp.vi"/>
 				<Item Name="Longest Line Length in Pixels.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Longest Line Length in Pixels.vi"/>
 				<Item Name="LVBoundsTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVBoundsTypeDef.ctl"/>
-				<Item Name="LVPointTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVPointTypeDef.ctl"/>
 				<Item Name="LVRectTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVRectTypeDef.ctl"/>
 				<Item Name="NI_AALPro.lvlib" Type="Library" URL="/&lt;vilib&gt;/Analysis/NI_AALPro.lvlib"/>
 				<Item Name="NI_FileType.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/lvfile.llb/NI_FileType.lvlib"/>
@@ -91,6 +90,8 @@
 				<Item Name="Write Delimited Spreadsheet (string).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write Delimited Spreadsheet (string).vi"/>
 				<Item Name="Write Delimited Spreadsheet.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write Delimited Spreadsheet.vi"/>
 				<Item Name="Write Spreadsheet String.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write Spreadsheet String.vi"/>
+				<Item Name="Trim Whitespace One-Sided.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Trim Whitespace One-Sided.vi"/>
+				<Item Name="LVPointTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVPointTypeDef.ctl"/>
 			</Item>
 			<Item Name="lvanlys.dll" Type="Document" URL="/&lt;resource&gt;/lvanlys.dll"/>
 		</Item>
@@ -100,9 +101,10 @@
 				<Property Name="App_INI_aliasGUID" Type="Str">{1D8C33CD-7BC8-4D2C-A706-7ECDB9611C1B}</Property>
 				<Property Name="App_INI_GUID" Type="Str">{55E6DB84-D0D5-4FBB-AEB2-6FF3B7AF0ABA}</Property>
 				<Property Name="App_serverConfig.httpPort" Type="Int">8002</Property>
+				<Property Name="App_serverType" Type="Int">1</Property>
 				<Property Name="Bld_autoIncrement" Type="Bool">true</Property>
 				<Property Name="Bld_buildCacheID" Type="Str">{CED9B266-DD62-4BE5-9646-13B0AB9E5E29}</Property>
-				<Property Name="Bld_buildSpecDescription" Type="Str">Dr. Kovács Attila Pál Mathcad-es kiértékelő algoritmusa alapján.</Property>
+				<Property Name="Bld_buildSpecDescription" Type="Str">Dr. Kovács Attila Pál Mathcad-es kiértékelo algoritmusa alapján.</Property>
 				<Property Name="Bld_buildSpecName" Type="Str">1D-s spektrális interferogram FT alapú kiértékelése</Property>
 				<Property Name="Bld_excludeInlineSubVIs" Type="Bool">true</Property>
 				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
@@ -113,8 +115,8 @@
 				<Property Name="Bld_previewCacheID" Type="Str">{C73B20C9-0A86-4C62-8FDD-6994E10FEC87}</Property>
 				<Property Name="Bld_version.build" Type="Int">8</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
-				<Property Name="Destination[0].destName" Type="Str">Kiértékelő alkalmazás.exe</Property>
-				<Property Name="Destination[0].path" Type="Path">../1D-s spektrális interferogram FT alapú kiértékelése alkalmazás/Kiértékelő alkalmazás.exe</Property>
+				<Property Name="Destination[0].destName" Type="Str">Kiértékelo alkalmazás.exe</Property>
+				<Property Name="Destination[0].path" Type="Path">../1D-s spektrális interferogram FT alapú kiértékelése alkalmazás/Kiértékelo alkalmazás.exe</Property>
 				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
 				<Property Name="Destination[0].type" Type="Str">App</Property>
 				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
@@ -151,12 +153,12 @@
 				<Property Name="Source[6].itemID" Type="Ref">/My Computer/Olvass el!.txt</Property>
 				<Property Name="Source[6].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="SourceCount" Type="Int">7</Property>
-				<Property Name="TgtF_fileDescription" Type="Str">Dr. Kovács Attila Pál Mathcad-es kiértékelő algoritmusa alapján.</Property>
-				<Property Name="TgtF_internalName" Type="Str">Kiértékelő alkalmazás</Property>
+				<Property Name="TgtF_fileDescription" Type="Str">Dr. Kovács Attila Pál Mathcad-es kiértékelo algoritmusa alapján.</Property>
+				<Property Name="TgtF_internalName" Type="Str">Kiértékelo alkalmazás</Property>
 				<Property Name="TgtF_legalCopyright" Type="Str">Labview-ban implementálta: Tari Balázs 2017.</Property>
-				<Property Name="TgtF_productName" Type="Str">Kiértékelő alkalmazás</Property>
+				<Property Name="TgtF_productName" Type="Str">Kiértékelo alkalmazás</Property>
 				<Property Name="TgtF_targetfileGUID" Type="Str">{09E6D831-22C8-44AA-81ED-15A1419644EE}</Property>
-				<Property Name="TgtF_targetfileName" Type="Str">Kiértékelő alkalmazás.exe</Property>
+				<Property Name="TgtF_targetfileName" Type="Str">Kiértékelo alkalmazás.exe</Property>
 			</Item>
 			<Item Name="Kiértékelő alkalmazás telepítő" Type="Installer">
 				<Property Name="Destination[0].name" Type="Str">1D-s spektrális interferogram FT alapú kiértékelése</Property>
@@ -165,72 +167,57 @@
 				<Property Name="Destination[0].type" Type="Str">userFolder</Property>
 				<Property Name="DestinationCount" Type="Int">1</Property>
 				<Property Name="DistPart[0].flavorID" Type="Str">DefaultFull</Property>
-				<Property Name="DistPart[0].productID" Type="Str">{448569AE-EE10-456F-B3A6-CA1D862E2E9C}</Property>
-				<Property Name="DistPart[0].productName" Type="Str">NI LabVIEW Runtime 2016</Property>
+				<Property Name="DistPart[0].productID" Type="Str">{7C216C83-85F9-4A5F-9938-2D839206554D}</Property>
+				<Property Name="DistPart[0].productName" Type="Str">NI LabVIEW Runtime 2023 Q1</Property>
 				<Property Name="DistPart[0].SoftDep[0].exclude" Type="Bool">false</Property>
 				<Property Name="DistPart[0].SoftDep[0].productName" Type="Str">NI ActiveX Container</Property>
 				<Property Name="DistPart[0].SoftDep[0].upgradeCode" Type="Str">{1038A887-23E1-4289-B0BD-0C4B83C6BA21}</Property>
 				<Property Name="DistPart[0].SoftDep[1].exclude" Type="Bool">false</Property>
-				<Property Name="DistPart[0].SoftDep[1].productName" Type="Str">NI System Web Server 16.0</Property>
-				<Property Name="DistPart[0].SoftDep[1].upgradeCode" Type="Str">{FCF64B73-B7D4-4971-8F11-24BAF7CC3E6C}</Property>
-				<Property Name="DistPart[0].SoftDep[10].exclude" Type="Bool">false</Property>
-				<Property Name="DistPart[0].SoftDep[10].productName" Type="Str">NI Deployment Framework 2016</Property>
-				<Property Name="DistPart[0].SoftDep[10].upgradeCode" Type="Str">{838942E4-B73C-492E-81A3-AA1E291FD0DC}</Property>
+				<Property Name="DistPart[0].SoftDep[1].productName" Type="Str">NI Deployment Framework 2023</Property>
+				<Property Name="DistPart[0].SoftDep[1].upgradeCode" Type="Str">{838942E4-B73C-492E-81A3-AA1E291FD0DC}</Property>
 				<Property Name="DistPart[0].SoftDep[2].exclude" Type="Bool">false</Property>
-				<Property Name="DistPart[0].SoftDep[2].productName" Type="Str">Math Kernel Libraries</Property>
-				<Property Name="DistPart[0].SoftDep[2].upgradeCode" Type="Str">{F34FFCA8-C4CB-47CC-8B81-C4E95E227355}</Property>
+				<Property Name="DistPart[0].SoftDep[2].productName" Type="Str">NI Logos 23.1</Property>
+				<Property Name="DistPart[0].SoftDep[2].upgradeCode" Type="Str">{5E4A4CE3-4D06-11D4-8B22-006008C16337}</Property>
 				<Property Name="DistPart[0].SoftDep[3].exclude" Type="Bool">false</Property>
-				<Property Name="DistPart[0].SoftDep[3].productName" Type="Str">NI Logos 5.8</Property>
-				<Property Name="DistPart[0].SoftDep[3].upgradeCode" Type="Str">{5E4A4CE3-4D06-11D4-8B22-006008C16337}</Property>
+				<Property Name="DistPart[0].SoftDep[3].productName" Type="Str">NI mDNS Responder 23.0</Property>
+				<Property Name="DistPart[0].SoftDep[3].upgradeCode" Type="Str">{9607874B-4BB3-42CB-B450-A2F5EF60BA3B}</Property>
 				<Property Name="DistPart[0].SoftDep[4].exclude" Type="Bool">false</Property>
-				<Property Name="DistPart[0].SoftDep[4].productName" Type="Str">NI TDM Streaming 16.0</Property>
-				<Property Name="DistPart[0].SoftDep[4].upgradeCode" Type="Str">{4CD11BE6-6BB7-4082-8A27-C13771BC309B}</Property>
+				<Property Name="DistPart[0].SoftDep[4].productName" Type="Str">NI VC2015 Runtime</Property>
+				<Property Name="DistPart[0].SoftDep[4].upgradeCode" Type="Str">{D42E7BAE-6589-4570-B6A3-3E28889392E7}</Property>
 				<Property Name="DistPart[0].SoftDep[5].exclude" Type="Bool">false</Property>
-				<Property Name="DistPart[0].SoftDep[5].productName" Type="Str">NI LabVIEW Real-Time NBFifo 2016</Property>
-				<Property Name="DistPart[0].SoftDep[5].upgradeCode" Type="Str">{718F68F2-14F0-4656-A29E-617F12A7343B}</Property>
-				<Property Name="DistPart[0].SoftDep[6].exclude" Type="Bool">false</Property>
-				<Property Name="DistPart[0].SoftDep[6].productName" Type="Str">NI VC2008MSMs</Property>
-				<Property Name="DistPart[0].SoftDep[6].upgradeCode" Type="Str">{FDA3F8BB-BAA9-45D7-8DC7-22E1F5C76315}</Property>
-				<Property Name="DistPart[0].SoftDep[7].exclude" Type="Bool">false</Property>
-				<Property Name="DistPart[0].SoftDep[7].productName" Type="Str">NI VC2010MSMs</Property>
-				<Property Name="DistPart[0].SoftDep[7].upgradeCode" Type="Str">{EFBA6F9E-F934-4BD7-AC51-60CCA480489C}</Property>
-				<Property Name="DistPart[0].SoftDep[8].exclude" Type="Bool">false</Property>
-				<Property Name="DistPart[0].SoftDep[8].productName" Type="Str">NI VC2015 Runtime</Property>
-				<Property Name="DistPart[0].SoftDep[8].upgradeCode" Type="Str">{D42E7BAE-6589-4570-B6A3-3E28889392E7}</Property>
-				<Property Name="DistPart[0].SoftDep[9].exclude" Type="Bool">false</Property>
-				<Property Name="DistPart[0].SoftDep[9].productName" Type="Str">NI mDNS Responder 14.0</Property>
-				<Property Name="DistPart[0].SoftDep[9].upgradeCode" Type="Str">{9607874B-4BB3-42CB-B450-A2F5EF60BA3B}</Property>
-				<Property Name="DistPart[0].SoftDepCount" Type="Int">11</Property>
-				<Property Name="DistPart[0].upgradeCode" Type="Str">{E7DBF016-365A-40B6-9526-B4D0B4830F51}</Property>
+				<Property Name="DistPart[0].SoftDep[5].productName" Type="Str">NI TDM Streaming 23.1</Property>
+				<Property Name="DistPart[0].SoftDep[5].upgradeCode" Type="Str">{4CD11BE6-6BB7-4082-8A27-C13771BC309B}</Property>
+				<Property Name="DistPart[0].SoftDepCount" Type="Int">6</Property>
+				<Property Name="DistPart[0].upgradeCode" Type="Str">{A3DD8CEA-07BB-3EB5-A026-4AB75BDFF807}</Property>
 				<Property Name="DistPartCount" Type="Int">1</Property>
 				<Property Name="INST_author" Type="Str">y</Property>
 				<Property Name="INST_autoIncrement" Type="Bool">true</Property>
-				<Property Name="INST_buildLocation" Type="Path">../1D-s spektrális interferogram FT alapú kiértékelése telepítő</Property>
+				<Property Name="INST_buildLocation" Type="Path">../1D-s spektrális interferogram FT alapú kiértékelése telepíto</Property>
 				<Property Name="INST_buildLocation.type" Type="Str">relativeToCommon</Property>
-				<Property Name="INST_buildSpecName" Type="Str">Kiértékelő alkalmazás telepítő</Property>
+				<Property Name="INST_buildSpecName" Type="Str">Kiértékelo alkalmazás telepíto</Property>
 				<Property Name="INST_defaultDir" Type="Str">{06C98895-89FB-4E20-81E0-E9C49547A293}</Property>
 				<Property Name="INST_productName" Type="Str">1D-s spektrális interferogram FT alapú kiértékelése</Property>
 				<Property Name="INST_productVersion" Type="Str">1.0.6</Property>
 				<Property Name="INST_readmeID" Type="Ref"></Property>
 				<Property Name="InstSpecBitness" Type="Str">32-bit</Property>
-				<Property Name="InstSpecVersion" Type="Str">16008010</Property>
+				<Property Name="InstSpecVersion" Type="Str">23108276</Property>
 				<Property Name="MSI_autoselectDrivers" Type="Bool">true</Property>
 				<Property Name="MSI_distID" Type="Str">{DB67DA4D-29CE-479B-A031-C33F045D7071}</Property>
 				<Property Name="MSI_hideNonRuntimes" Type="Bool">true</Property>
 				<Property Name="MSI_osCheck" Type="Int">0</Property>
 				<Property Name="MSI_upgradeCode" Type="Str">{4F3F71A4-B3AB-4682-A374-416BB8F72209}</Property>
 				<Property Name="MSI_windowMessage" Type="Str">1D-s spektrális interferogram FT alapú kiértékelése alkalmazás telepítése.
-Dr. Kovács Attila Pál Mathcad-es kiértékelő algoritmusa alapján.</Property>
-				<Property Name="MSI_windowTitle" Type="Str">Telepítő</Property>
+Dr. Kovács Attila Pál Mathcad-es kiértékelo algoritmusa alapján.</Property>
+				<Property Name="MSI_windowTitle" Type="Str">Telepíto</Property>
 				<Property Name="RegDest[0].dirName" Type="Str">Software</Property>
 				<Property Name="RegDest[0].dirTag" Type="Str">{DDFAFC8B-E728-4AC8-96DE-B920EBB97A86}</Property>
 				<Property Name="RegDest[0].parentTag" Type="Str">2</Property>
 				<Property Name="RegDestCount" Type="Int">1</Property>
 				<Property Name="Source[0].dest" Type="Str">{06C98895-89FB-4E20-81E0-E9C49547A293}</Property>
 				<Property Name="Source[0].File[0].dest" Type="Str">{06C98895-89FB-4E20-81E0-E9C49547A293}</Property>
-				<Property Name="Source[0].File[0].name" Type="Str">Kiértékelő alkalmazás.exe</Property>
+				<Property Name="Source[0].File[0].name" Type="Str">Kiértékelo alkalmazás.exe</Property>
 				<Property Name="Source[0].File[0].Shortcut[0].destIndex" Type="Int">0</Property>
-				<Property Name="Source[0].File[0].Shortcut[0].name" Type="Str">Kiértékelő alkalmazás</Property>
+				<Property Name="Source[0].File[0].Shortcut[0].name" Type="Str">Kiértékelo alkalmazás</Property>
 				<Property Name="Source[0].File[0].Shortcut[0].subDir" Type="Str">1D-s spektrális interferogram FT alapú kiértékelése</Property>
 				<Property Name="Source[0].File[0].ShortcutCount" Type="Int">1</Property>
 				<Property Name="Source[0].File[0].tag" Type="Str">{09E6D831-22C8-44AA-81ED-15A1419644EE}</Property>

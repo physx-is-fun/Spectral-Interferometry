@@ -3,4 +3,4 @@ With this application we can evaluate the spectral phase derivations of measured
 
 Dependencies:
 
-NI Labview 2016 (National Instruments)
+Labview 2023 Q1 Community Edition
